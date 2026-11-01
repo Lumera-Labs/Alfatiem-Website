@@ -1,0 +1,43 @@
+{% extends "base.html" %}{% load static %}
+{% block main %}<section class="pagehead"><div class="wrap"><div class="crumb"><a href="/">{% t "projects.001" %}</a> / {% t "projects.002" %}</div><h1>{% t "projects.003" %}</h1><p class="lead">{% t "projects.004" %}</p></div></section>
+<section class="band" style="padding-top:36px"><div class="wrap">
+  <div class="tabs" role="tablist" id="ptabs"></div>
+  <div class="row" style="margin-top:14px;gap:10px"><span class="note" id="svlabel"></span><div class="chips" id="pchips"></div></div>
+  <div class="summary" id="psum"></div>
+  <div class="plist-head"><span></span><span>{% t "projects.005" %}</span><span>{% t "projects.006" %}</span><span>{% t "projects.007" %}</span></div><div class="plist" id="pgrid"></div>
+  <div id="pmore"></div>
+  <div id="resgal"{% if not extra_photos %} data-empty{% endif %}><div class="gap-l"></div>
+  <div class="sec-head"><h3 class="h2">{% t "projects.008" %}</h3></div>
+  <div class="gallery">{% for ph in extra_photos %}<figure><img src="{{ ph.image.url }}" alt="{{ ph.caption_en }}" loading="lazy"><figcaption>{% bi ph.caption_en ph.caption_ar %}</figcaption></figure>{% endfor %}</div></div>
+</div></section>
+<section class="closing"><div class="wrap closing-in"><div><h2>{% t "projects.011" %}</h2><p>{% t "projects.012" %}</p></div><div class="row"><a class="btn white" href="/inquiries/">{% t "projects.013" %}</a><a class="btn light" href="/contact/">{% t "projects.014" %}</a></div></div></section>{% endblock %}
+{% block data %}{{ projects_json|json_script:"projects-data" }}{% endblock %}
+{% block scripts %}<script>
+
+
+AFL_INIT=window.AFL_INIT||[];AFL_INIT.push(function(){
+ var TABS=[['government','gov',{en:'Ministries',ar:'الوزارات'}],['residential','res',{en:'Houses and villas',ar:'المنازل والفلل'}],['commercial','com',{en:'Commercial buildings',ar:'المباني التجارية'}]];
+ var cur='government',svf='all';
+ function fromHash(){var h=(location.hash||'').slice(1);TABS.forEach(function(t){if(t[0]===h)cur=h})}
+ fromHash();window.addEventListener('hashchange',function(){fromHash();paint()});
+ function paint(){
+  var sec=TABS.filter(function(t){return t[0]===cur})[0][1];
+  document.getElementById('ptabs').innerHTML=TABS.map(function(t){return '<button class="tab" role="tab" type="button" data-t="'+t[0]+'" aria-selected="'+(t[0]===cur)+'">'+AFL.t(t[2])+' ('+PROJECTS.filter(function(p){return p.s===t[1]}).length+')</button>'}).join('');
+  document.getElementById('svlabel').textContent=AFL.t({en:'Service:',ar:'الخدمة:'});
+  var C=[['all',{en:'All',ar:'الكل'}],['eifs',{en:'Insulation (EIFS)',ar:'العزل (EIFS)'}],['scaf',{en:'Scaffolding',ar:'السقالات'}]];
+  document.getElementById('pchips').innerHTML=C.map(function(c){return '<button class="chip" type="button" data-s="'+c[0]+'" aria-pressed="'+(c[0]===svf)+'">'+AFL.t(c[1])+'</button>'}).join('');
+  var list=PROJECTS.filter(function(p){return p.s===sec&&(svf==='all'||p.sv.indexOf(svf)>-1)}).sort(function(a,b){return b.y-a.y||(b.a||0)-(a.a||0)});
+  var yrs=list.map(function(p){return p.y});
+  document.getElementById('psum').innerHTML='<span><b>'+list.length+'</b> '+AFL.t({en:'projects',ar:'مشروعًا'})+'</span><span><b>'+Math.round(totalArea(list)).toLocaleString('en-US')+'</b> '+AFL.t({en:'m² insulated',ar:'م² معزولة'})+'</span><span><b>'+(yrs.length?Math.min.apply(0,yrs)+'–'+Math.max.apply(0,yrs):'—')+'</b></span>';
+  var rg=document.getElementById('resgal');rg.hidden=cur!=='residential'||rg.hasAttribute('data-empty');
+  var withP=list.filter(function(p){return p.ph&&p.ph.length}),noP=list.filter(function(p){return !(p.ph&&p.ph.length)});
+  document.getElementById('pgrid').innerHTML=withP.map(projCard).join('');
+  document.getElementById('pmore').innerHTML=noP.length?(function(){var L={p:AFL.t({en:'Project',ar:'المشروع'}),l:AFL.t({en:'Location',ar:'الموقع'}),y:AFL.t({en:'Year',ar:'السنة'}),a:AFL.t({en:'Area',ar:'المساحة'}),c:AFL.t({en:'Client',ar:'العميل'})};return '<h3 class="h3" style="margin:56px 0 16px">'+AFL.t({en:'Also completed',ar:'مشاريع منجزة أخرى'})+'</h3><div class="tbl-wrap"><table class="rtable"><thead><tr><th>'+L.p+'</th><th>'+L.l+'</th><th>'+L.y+'</th><th>'+L.a+'</th><th>'+L.c+'</th></tr></thead><tbody>'+noP.map(function(p){return '<tr><td data-label="'+L.p+'"><b>'+AFL.t(p)+'</b></td><td data-label="'+L.l+'">'+AFL.t(p.loc)+'</td><td data-label="'+L.y+'">'+p.y+'</td><td data-label="'+L.a+'"><bdi dir="ltr">'+fmtA(p.a)+'</bdi></td><td data-label="'+L.c+'">'+(p.cl?AFL.t(p.cl):'—')+'</td></tr>'}).join('')+'</tbody></table></div>'})():''}
+ document.addEventListener('click',function(e){var t=e.target.closest('[data-t]'),s=e.target.closest('[data-s]');
+  if(t){cur=t.getAttribute('data-t');try{history.replaceState(null,'','#'+cur)}catch(x){location.hash=cur}paint()}
+  if(s){svf=s.getAttribute('data-s');paint()}});
+ AFL.subs.push(paint);paint()});
+
+
+
+</script>{% endblock %}

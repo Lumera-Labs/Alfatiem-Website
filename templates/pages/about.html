@@ -1,0 +1,21 @@
+{% extends "base.html" %}{% load static %}
+{% block main %}<section class="pagehead"><div class="wrap"><div class="crumb"><a href="/">{% t "about.001" %}</a> / {% t "about.002" %}</div><h1>{% t "about.003" %}</h1><p class="lead">{% t "about.004" %}</p></div></section>
+<section class="band"><div class="wrap split"><div class="stack"><h2 class="h2">{% t "about.005" %}</h2><p class="lead">{% t "about.006" %}</p><p class="muted">{% t "about.007" %}</p></div><img src="{% static 'img/naseem-2.webp' %}" alt="Finished villa at Al Naseem, Diyar Al Muharraq" loading="lazy"></div></section>
+<section class="band alt"><div class="wrap cols-2" style="align-items:start"><h2 class="h2">{% t "about.008" %}</h2><dl class="vals"><dt>{% t "about.009" %}</dt><dd>{% t "about.010" %}</dd><dt>{% t "about.011" %}</dt><dd>{% t "about.012" %}</dd><dt>{% t "about.013" %}</dt><dd>{% t "about.014" %}</dd><dt>{% t "about.015" %}</dt><dd>{% t "about.016" %}</dd><dt>{% t "about.017" %}</dt><dd>{% t "about.018" %}</dd></dl></div></section>
+<section class="band"><div class="wrap split flip"><div class="stack"><h2 class="h2">{% t "about.019" %}</h2><p class="lead">{% t "about.020" %}</p><p class="muted">{% t "about.021" %}</p></div><img src="{% static 'img/wadi-1.webp' %}" alt="Insulation crews working from scaffolding at Wadi Al Sail" loading="lazy"></div></section>
+<section class="band alt"><div class="wrap">
+  <div class="sec-head"><h2 class="h2">{% t "about.022" %}</h2></div>
+  <div class="tools"><figure><img src="{% static 'img/tool-1.webp' %}" alt="Steel trowel" loading="lazy"></figure><figure><img src="{% static 'img/tool-2.webp' %}" alt="Corner trowel" loading="lazy"></figure><figure><img src="{% static 'img/tool-3.webp' %}" alt="Scrapers" loading="lazy"></figure><figure><img src="{% static 'img/tool-4.webp' %}" alt="Mixers" loading="lazy"></figure></div>
+  <p class="note" style="margin-top:16px">{% t "about.023" %}</p>
+</div></section>
+<section class="band"><div class="wrap">
+  <div class="sec-head"><h2 class="h2">{% t "about.024" %}</h2></div>
+  <div class="tbl-wrap"><table>
+   <thead><tr><th>{% t "about.025" %}</th><th>{% t "about.026" %}</th><th>{% t "about.027" %}</th><th>{% t "about.028" %}</th></tr></thead>
+   <tbody>
+    <tr><td>{% t "about.029" %}</td><td>Al-Fatiem Alarabi Contracting Co. W.L.L.<br><span class="muted">شركة الفطيم العربي للمقاولات ذ.م.م</span></td><td class="mono">139385-1</td><td>{% t "about.030" %}</td></tr>
+    <tr><td>{% t "about.031" %}</td><td>Al-Fatiem Alarabi Trading Co. W.L.L.<br><span class="muted">شركة الفطيم العربي للتجارة ذ.م.م</span></td><td class="mono">139385-2</td><td>{% t "about.032" %}</td></tr>
+   </tbody></table></div>
+  <p class="note" style="margin-top:16px">{% t "about.033" %}</p>
+</div></section>
+<section class="closing"><div class="wrap closing-in"><div><h2>{% t "about.034" %}</h2><p>{% t "about.035" %}</p></div><div class="row"><a class="btn white" href="/inquiries/">{% t "about.036" %}</a><a class="btn light" href="/contact/">{% t "about.037" %}</a></div></div></section>{% endblock %}

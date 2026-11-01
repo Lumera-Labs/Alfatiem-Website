@@ -1,0 +1,32 @@
+{% extends "base.html" %}{% load static %}
+{% block title %}{{ post.title_en }} | Al-Fatiem Alarabi{% endblock %}
+{% block description %}{{ post.summary_en }}{% endblock %}
+{% block head %}<meta property="og:type" content="article"><meta property="og:title" content="{{ post.title_en }}"><meta property="og:description" content="{{ post.summary_en }}"><meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{{ post.cover.url }}"><link rel="canonical" href="{{ request.scheme }}://{{ request.get_host }}{{ post.get_absolute_url }}">{% endblock %}
+{% block main %}
+<article>
+<header class="pagehead art-head"><div class="wrap">
+  <div class="crumb"><a href="/">{% t "common.001" %}</a> / <a href="{% url 'news' %}">{% t "common.006" %}</a></div>
+  <div class="nmeta"><span class="tag gov">{% bi post.category.name_en post.category.name_ar %}</span><time datetime="{{ post.date|date:'Y-m-d' }}">{% postdate post %}</time></div>
+  <h1>{% bi post.title_en post.title_ar %}</h1>
+  <p class="lead">{% bi post.summary_en post.summary_ar %}</p>
+</div></header>
+<div class="band" style="padding-top:48px"><div class="wrap">
+  <figure class="art-cover"><img src="{{ post.cover.url }}" alt="{{ post.title_en }}" data-zoom="{{ post.cover.url }}"></figure>
+  {% if post.body_en or post.body_ar %}
+  <div class="art-body"><div data-l="en">{{ post.body_en|paras }}</div><div data-l="ar">{% if post.body_ar %}{{ post.body_ar|paras }}{% else %}{{ post.body_en|paras }}{% endif %}</div></div>
+  {% endif %}
+  {% with imgs=post.images.all %}{% if imgs %}
+  <h2 class="h3 art-gh">{% t "news.012" %}</h2>
+  <div class="gallery art-gal">{% for im in imgs %}<figure><button type="button" class="art-th" data-gal="{% for x in imgs %}{{ x.image.url }}{% if not forloop.last %},{% endif %}{% endfor %}" data-start="{{ forloop.counter0 }}" aria-label="{{ im.caption_en|default:'Photo' }}"><img src="{{ im.image.url }}" alt="{{ im.caption_en }}" loading="lazy"></button>{% if im.caption_en %}<figcaption>{% bi im.caption_en im.caption_ar %}</figcaption>{% endif %}</figure>{% endfor %}</div>
+  {% endif %}{% endwith %}
+  <p class="art-back"><a class="textlink" href="{% url 'news' %}">{% t "news.011" %}</a></p>
+</div></div>
+</article>
+{% if more %}
+<section class="band alt"><div class="wrap">
+  <div class="sec-head line" style="margin-bottom:32px"><h2 class="h2 sm">{% t "news.005" %}</h2><a class="textlink" href="{% url 'news' %}">{% t "news.003" %}</a></div>
+  <div class="ngrid">{% for p in more %}{% include "news/_card.html" %}{% endfor %}</div>
+</div></section>
+{% endif %}
+{% include "news/_closing.html" %}
+{% endblock %}

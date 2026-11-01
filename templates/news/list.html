@@ -1,0 +1,35 @@
+{% extends "base.html" %}{% load static %}
+{% block main %}
+<section class="pagehead"><div class="wrap"><div class="crumb"><a href="/">{% t "common.001" %}</a> / {% t "common.006" %}</div><h1>{% t "news.001" %}</h1><p class="lead">{% t "news.002" %}</p></div></section>
+<section class="band" style="padding-top:56px"><div class="wrap">
+{% if featured %}
+  <a class="lead-story" href="{{ featured.get_absolute_url }}" target="_blank" rel="noopener">
+    <span class="lead-im"><img src="{{ featured.cover.url }}" alt="" fetchpriority="high"></span>
+    <span class="lead-tx">
+      <span class="nmeta"><span class="tag gov">{% bi featured.category.name_en featured.category.name_ar %}</span><time datetime="{{ featured.date|date:'Y-m-d' }}">{% postdate featured %}</time></span>
+      <span class="lead-t">{% bi featured.title_en featured.title_ar %}</span>
+      <span class="lead-s">{% bi featured.summary_en featured.summary_ar %}</span>
+      <span class="btn primary">{% t "news.004" %}</span>
+      <span class="sr-only">{% t "news.010" %}</span>
+    </span>
+  </a>
+{% endif %}
+{% if categories|length > 1 %}
+  <nav class="ncats" aria-label="Categories">
+    <a class="chip" href="{% url 'news' %}"{% if not current %} aria-current="page"{% endif %}>{% t "news.003" %}</a>
+    {% for c in categories %}<a class="chip" href="{% url 'news-cat' c.slug %}"{% if current == c.slug %} aria-current="page"{% endif %}>{% bi c.name_en c.name_ar %}</a>{% endfor %}
+  </nav>
+{% endif %}
+{% if page_obj.object_list %}
+  <div class="ngrid">{% for p in page_obj %}{% include "news/_card.html" %}{% endfor %}</div>
+{% elif not featured %}
+  <p class="lead" style="margin-top:32px">{% t "news.006" %}</p>
+{% endif %}
+{% if page_obj.has_other_pages %}
+  <nav class="pager" aria-label="Pages">
+    {% for n in page_obj.paginator.page_range %}<a class="chip" href="{% if current %}{% if n == 1 %}{% url 'news-cat' current %}{% else %}{% url 'news-cat-page' current n %}{% endif %}{% else %}{% if n == 1 %}{% url 'news' %}{% else %}{% url 'news-page' n %}{% endif %}{% endif %}"{% if n == page_obj.number %} aria-current="page"{% endif %}>{{ n }}</a>{% endfor %}
+  </nav>
+{% endif %}
+</div></section>
+{% include "news/_closing.html" %}
+{% endblock %}

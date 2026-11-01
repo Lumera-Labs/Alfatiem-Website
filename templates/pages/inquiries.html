@@ -1,0 +1,65 @@
+{% extends "base.html" %}{% load static %}
+{% block main %}<section class="pagehead"><div class="wrap"><div class="crumb"><a href="/">{% t "inquiries.001" %}</a> / {% t "inquiries.002" %}</div><h1>{% t "inquiries.003" %}</h1><p class="lead">{% t "inquiries.004" %}</p></div></section>
+<section class="band" style="padding-top:36px"><div class="wrap cols-2" style="align-items:start">
+  <div class="panel">
+    <div class="tabs" role="tablist" id="itabs"></div>
+    <form id="iform" class="formgrid" novalidate>
+      <div class="field full" id="subwrap" hidden><label for="sub">{% t "inquiries.005" %}</label><select id="sub"><option value="rent" data-en="Rent scaffolding" data-ar="استئجار سقالات">Rent scaffolding</option><option value="buy" data-en="Buy scaffolding material" data-ar="شراء مواد سقالات">Buy scaffolding material</option><option value="sell" data-en="Sell used material to us" data-ar="بيع مواد مستعملة لنا">Sell used material to us</option><option value="erect" data-en="Erection and dismantling" data-ar="تركيب وفك سقالات">Erection and dismantling</option></select></div>
+      <div class="field"><label for="nm">{% t "inquiries.006" %}</label><input id="nm" autocomplete="name" required aria-describedby="nm-e"><span class="err" id="nm-e" hidden>{% t "inquiries.007" %}</span></div>
+      <div class="field"><label for="co">{% t "inquiries.008" %}</label><input id="co" autocomplete="organization"></div>
+      <div class="field"><label for="ph">{% t "inquiries.009" %}</label><input id="ph" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" required aria-describedby="ph-e"><span class="err" id="ph-e" hidden>{% t "inquiries.010" %}</span></div>
+      <div class="field"><label for="loc">{% t "inquiries.011" %}</label><input id="loc"></div>
+      <div class="field full"><label for="dt">{% t "inquiries.012" %}</label><textarea id="dt" data-ph-en="" data-ph-ar=""></textarea></div>
+      <div class="full row"><button class="btn primary" type="submit">{% t "inquiries.013" %}</button></div>
+    </form>
+    <div class="result" id="res"><b>{% t "inquiries.014" %}</b><pre id="msg"></pre><div class="row"><a class="btn primary" id="wa" href="#" target="_blank" rel="noopener">{% t "inquiries.015" %}</a><button class="btn ghost" type="button" id="cpy">{% t "inquiries.016" %}</button></div><p class="note">{% t "inquiries.017" %}</p></div>
+  </div>
+  <div class="stack" style="gap:24px">
+    <div class="panel" id="estp" hidden>
+      <div><h2 class="h3">{% t "inquiries.018" %}</h2><p class="muted">{% t "inquiries.019" %}</p></div>
+      <div class="formgrid" style="grid-template-columns:repeat(3,minmax(0,1fr))"><div class="field"><label for="el">{% t "inquiries.020" %}</label><input id="el" type="number" min="1" value="20" inputmode="decimal"></div><div class="field"><label for="eh">{% t "inquiries.021" %}</label><input id="eh" type="number" min="1" value="9" inputmode="decimal"></div><div class="field"><label for="ew">{% t "inquiries.022" %}</label><input id="ew" type="number" min="0.5" step="0.1" value="1.2" inputmode="decimal"></div></div>
+      <div class="est" id="est"></div><p class="note">{% t "inquiries.023" %}</p>
+      <div class="row"><button class="btn ghost" type="button" id="addest">{% t "inquiries.024" %}</button></div>
+    </div>
+    <div class="stack" style="gap:16px"><h2 class="h3">{% t "inquiries.025" %}</h2><div class="reach"><a href="https://wa.me/{{ site.whatsapp_digits }}" target="_blank" rel="noopener"><span>{% t "inquiries.026" %}</span><b><bdi dir="ltr">{{ site.whatsapp }}</bdi></b></a><a href="tel:+{{ site.phone_digits }}"><span>{% t "inquiries.027" %}</span><b><bdi dir="ltr">{{ site.phone }}</bdi></b></a><a href="mailto:{{ site.email }}"><span>{% t "inquiries.028" %}</span><b><bdi dir="ltr">{{ site.email }}</bdi></b></a><div><span>{% t "inquiries.029" %}</span><b>{% t "inquiries.030" %}</b></div></div></div>
+  </div>
+</div></section>
+{% endblock %}
+{% block scripts %}<script>
+
+
+AFL_INIT=window.AFL_INIT||[];AFL_INIT.push(function(){
+ var TY=[['insulation',{en:'Insulation quote',ar:'عرض سعر عزل'},'Insulation quote'],['scaffolding',{en:'Scaffolding',ar:'سقالات'},'Scaffolding'],['documents',{en:'Tender documents',ar:'مستندات المناقصات'},'Tender or prequalification documents']];
+ var cur='insulation',estText='';
+ function fromHash(){var h=(location.hash||'').slice(1);TY.forEach(function(t){if(t[0]===h)cur=h})}
+ fromHash();window.addEventListener('hashchange',function(){fromHash();paint()});
+ var PH={insulation:{en:'Building type, wall area in m², location, drawings available',ar:'نوع المبنى ومساحة الجدران بالمتر المربع والموقع والمخططات المتوفرة'},scaffolding:{en:'Quantities or wall size, duration, delivery location',ar:'الكميات أو أبعاد الجدار والمدة وموقع التسليم'},documents:{en:'Tender name, which documents you need and the deadline',ar:'اسم المناقصة والمستندات المطلوبة والموعد النهائي'}};
+ function paint(){
+  document.getElementById('itabs').innerHTML=TY.map(function(t){return '<button class="tab" role="tab" type="button" data-i="'+t[0]+'" aria-selected="'+(t[0]===cur)+'">'+AFL.t(t[1])+'</button>'}).join('');
+  document.getElementById('subwrap').hidden=cur!=='scaffolding';document.getElementById('estp').hidden=cur!=='scaffolding';
+  var dt=document.getElementById('dt');dt.setAttribute('data-ph-en',PH[cur].en);dt.setAttribute('data-ph-ar',PH[cur].ar);dt.placeholder=PH[cur][AFL.lang];
+  est()}
+ function est(){var L=+document.getElementById('el').value||20,H=+document.getElementById('eh').value||9,W=+document.getElementById('ew').value||1.2;
+  var bl=Math.ceil(L/2.5),bw=Math.max(1,Math.ceil(W/1.2)),lf=Math.ceil(H/2.0);
+  var st=(bl+1)*(bw+1)*lf,lg=bl*(lf+1)*(bw+1)*2,bd=bl*Math.ceil(W/0.3),jk=(bl+1)*(bw+1);
+  estText='Estimate for '+L+' m x '+H+' m x '+W+' m: standards '+st+', ledgers '+lg+', boards '+bd+', base jacks '+jk;
+  var u=AFL.lang==='ar'?'قطعة':'pcs';
+  document.getElementById('est').innerHTML=[[st,{en:'Standards',ar:'أعمدة'}],[lg,{en:'Ledgers',ar:'عوارض أفقية'}],[bd,{en:'Boards',ar:'ألواح'}],[jk,{en:'Base jacks',ar:'قواعد'}]].map(function(x){return '<div><b>'+x[0]+'</b><span>'+AFL.t(x[1])+' ('+u+')</span></div>'}).join('')}
+ ['el','eh','ew'].forEach(function(i){document.getElementById(i).addEventListener('input',est)});
+ document.getElementById('addest').addEventListener('click',function(){var d=document.getElementById('dt');d.value=(d.value?d.value+'\n':'')+estText;d.focus()});
+ document.addEventListener('click',function(e){var t=e.target.closest('[data-i]');if(t){cur=t.getAttribute('data-i');try{history.replaceState(null,'','#'+cur)}catch(x){location.hash=cur}document.getElementById('res').classList.remove('show');paint()}});
+ document.getElementById('iform').addEventListener('submit',function(e){e.preventDefault();
+  var bad=null;[['nm',2],['ph',7]].forEach(function(x){var el=document.getElementById(x[0]),v=el.value.replace(/\s/g,''),ko=v.length<x[1];el.setAttribute('aria-invalid',ko);document.getElementById(x[0]+'-e').hidden=!ko;if(ko&&!bad)bad=el});
+  if(bad){bad.focus();document.getElementById('res').classList.remove('show');return}
+  var ty=TY.filter(function(t){return t[0]===cur})[0][2],sub='';
+  if(cur==='scaffolding'){var s=document.getElementById('sub');sub=' - '+s.options[s.selectedIndex].text}
+  var v=function(i){return document.getElementById(i).value.trim()};
+  var m='AL-FATIEM ALARABI WEBSITE INQUIRY\nType: '+ty+sub+'\nName: '+v('nm')+'\nCompany: '+v('co')+'\nPhone: '+v('ph')+'\nLocation: '+v('loc')+'\nDetails: '+v('dt');
+  document.getElementById('msg').textContent=m;document.getElementById('wa').href='https://wa.me/'+document.body.getAttribute('data-wa')+'?text='+encodeURIComponent(m);
+  document.getElementById('cpy').onclick=function(){var b=this,o=b.innerHTML;try{navigator.clipboard.writeText(m).then(function(){b.innerHTML='<span data-l="en">Copied</span><span data-l="ar">تم النسخ</span>';setTimeout(function(){b.innerHTML=o},1400)},function(){})}catch(x){}};
+  document.getElementById('res').classList.add('show');document.getElementById('res').scrollIntoView({block:'nearest'})});
+ AFL.subs.push(paint);paint()});
+
+
+
+</script>{% endblock %}

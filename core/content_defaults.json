@@ -1,0 +1,1760 @@
+{
+ "pages": [
+  {
+   "slug": "common",
+   "name": "Header and footer (all pages)",
+   "blocks": [
+    {
+     "key": "common.001",
+     "kind": "Menu link",
+     "en": "Home",
+     "ar": "الرئيسية"
+    },
+    {
+     "key": "common.002",
+     "kind": "Menu link",
+     "en": "About us",
+     "ar": "من نحن"
+    },
+    {
+     "key": "common.003",
+     "kind": "Menu link",
+     "en": "Services",
+     "ar": "الخدمات"
+    },
+    {
+     "key": "common.004",
+     "kind": "Menu link",
+     "en": "Projects",
+     "ar": "المشاريع"
+    },
+    {
+     "key": "common.005",
+     "kind": "Menu link",
+     "en": "Approvals",
+     "ar": "الاعتمادات"
+    },
+    {
+     "key": "common.006",
+     "kind": "Menu link",
+     "en": "News",
+     "ar": "الأخبار"
+    },
+    {
+     "key": "common.007",
+     "kind": "Menu link",
+     "en": "Inquiries",
+     "ar": "الاستفسارات"
+    },
+    {
+     "key": "common.008",
+     "kind": "Menu link",
+     "en": "Contact us",
+     "ar": "اتصل بنا"
+    },
+    {
+     "key": "common.009",
+     "kind": "Button",
+     "en": "Menu",
+     "ar": "القائمة"
+    },
+    {
+     "key": "common.010",
+     "kind": "Paragraph",
+     "en": "Thermal insulation and scaffolding contractors in the Kingdom of Bahrain.",
+     "ar": "مقاولو العزل الحراري والسقالات في مملكة البحرين."
+    },
+    {
+     "key": "common.011",
+     "kind": "Footer heading",
+     "en": "Pages",
+     "ar": "الصفحات"
+    },
+    {
+     "key": "common.012",
+     "kind": "Footer link",
+     "en": "Home",
+     "ar": "الرئيسية"
+    },
+    {
+     "key": "common.013",
+     "kind": "Footer link",
+     "en": "About us",
+     "ar": "من نحن"
+    },
+    {
+     "key": "common.014",
+     "kind": "Footer link",
+     "en": "Services",
+     "ar": "الخدمات"
+    },
+    {
+     "key": "common.015",
+     "kind": "Footer link",
+     "en": "Projects",
+     "ar": "المشاريع"
+    },
+    {
+     "key": "common.016",
+     "kind": "Footer link",
+     "en": "Approvals",
+     "ar": "الاعتمادات"
+    },
+    {
+     "key": "common.017",
+     "kind": "Footer link",
+     "en": "News",
+     "ar": "الأخبار"
+    },
+    {
+     "key": "common.018",
+     "kind": "Footer link",
+     "en": "Inquiries",
+     "ar": "الاستفسارات"
+    },
+    {
+     "key": "common.019",
+     "kind": "Footer link",
+     "en": "Contact us",
+     "ar": "اتصل بنا"
+    },
+    {
+     "key": "common.020",
+     "kind": "Footer heading",
+     "en": "Divisions",
+     "ar": "الأقسام"
+    },
+    {
+     "key": "common.021",
+     "kind": "Footer link",
+     "en": "Thermal insulation (EIFS)",
+     "ar": "العزل الحراري (EIFS)"
+    },
+    {
+     "key": "common.022",
+     "kind": "Footer link",
+     "en": "Scaffolding",
+     "ar": "السقالات"
+    },
+    {
+     "key": "common.023",
+     "kind": "Footer link",
+     "en": "Request a quote",
+     "ar": "اطلب عرض سعر"
+    },
+    {
+     "key": "common.024",
+     "kind": "Footer heading",
+     "en": "Reach us",
+     "ar": "تواصل معنا"
+    },
+    {
+     "key": "common.025",
+     "kind": "Footer label",
+     "en": "(WhatsApp)",
+     "ar": "(واتساب)"
+    },
+    {
+     "key": "common.026",
+     "kind": "Footer address",
+     "en": "Building 791, Road 425, Block 404, Sanabis, Bahrain",
+     "ar": "مبنى 791، طريق 425، مجمع 404، السنابس، البحرين"
+    },
+    {
+     "key": "common.027",
+     "kind": "Footer legal line",
+     "en": "Insulation: Al-Fatiem Alarabi Contracting Co. W.L.L. (CR 139385-1) · Scaffolding: Al-Fatiem Alarabi Trading Co. W.L.L. (CR 139385-2)",
+     "ar": "العزل: شركة الفطيم العربي للمقاولات ذ.م.م (س.ت <bdi dir=\"ltr\">139385-1</bdi>) · السقالات: شركة الفطيم العربي للتجارة ذ.م.م (س.ت <bdi dir=\"ltr\">139385-2</bdi>)"
+    }
+   ]
+  },
+  {
+   "slug": "index",
+   "name": "Home",
+   "title": "Al-Fatiem Alarabi | Thermal insulation and scaffolding in Bahrain",
+   "description": "Thermal insulation (EIFS) and scaffolding contractor in Bahrain. EWA-registered insulation systems, scaffolding sale, rental and erection.",
+   "blocks": [
+    {
+     "key": "index.001",
+     "kind": "Page heading",
+     "en": "Thermal insulation and scaffolding for Bahrain's buildings",
+     "ar": "العزل الحراري والسقالات لمباني مملكة البحرين"
+    },
+    {
+     "key": "index.002",
+     "kind": "Paragraph",
+     "en": "We apply EIFS external insulation registered with the Electricity and Water Authority, and we supply, erect and dismantle the scaffolding it needs. Since 2020 we have insulated more than 350,000 m² of housing schemes, villas and commercial buildings.",
+     "ar": "ننفّذ أنظمة العزل الحراري الخارجي (EIFS) المسجّلة لدى هيئة الكهرباء والماء، ونوفّر السقالات اللازمة لها ونركّبها ونفكّها. منذ عام 2020 عزلنا أكثر من 350,000 م² من مشاريع الإسكان والفلل والمباني التجارية."
+    },
+    {
+     "key": "index.003",
+     "kind": "Button",
+     "en": "Request a quote",
+     "ar": "اطلب عرض سعر"
+    },
+    {
+     "key": "index.004",
+     "kind": "Button",
+     "en": "See our projects",
+     "ar": "شاهد مشاريعنا"
+    },
+    {
+     "key": "index.005",
+     "kind": "Heading",
+     "en": "Thermal insulation (EIFS)",
+     "ar": "العزل الحراري الخارجي (EIFS)"
+    },
+    {
+     "key": "index.006",
+     "kind": "Paragraph",
+     "en": "Insulation board, mesh, basecoat and finish, applied by our own trained teams using systems registered with the Electricity and Water Authority.",
+     "ar": "ألواح العزل والشبك وطبقة الأساس والتشطيب، تنفّذها فرقنا المدرّبة وفق أنظمة مسجّلة لدى هيئة الكهرباء والماء."
+    },
+    {
+     "key": "index.007",
+     "kind": "List item",
+     "en": "Housing schemes, villas and commercial buildings",
+     "ar": "مشاريع إسكان وفلل ومبانٍ تجارية"
+    },
+    {
+     "key": "index.008",
+     "kind": "List item",
+     "en": "AL FATIEM EIFS and EIFS PRO, both EWA registered",
+     "ar": "AL FATIEM EIFS وEIFS PRO، كلاهما مسجّل لدى الهيئة"
+    },
+    {
+     "key": "index.009",
+     "kind": "List item",
+     "en": "Applicator for main contractors and the Ministry of Housing",
+     "ar": "مُنفِّذ لدى المقاولين الرئيسيين ووزارة الإسكان"
+    },
+    {
+     "key": "index.010",
+     "kind": "Link",
+     "en": "Insulation services",
+     "ar": "خدمات العزل"
+    },
+    {
+     "key": "index.011",
+     "kind": "Heading",
+     "en": "Scaffolding",
+     "ar": "السقالات"
+    },
+    {
+     "key": "index.012",
+     "kind": "Paragraph",
+     "en": "Sale, rental and buy-back of scaffolding material, with planning, erection, dismantling and inspection by our own crews.",
+     "ar": "بيع وتأجير وشراء مواد السقالات، مع التخطيط والتركيب والفك والفحص بواسطة فرقنا."
+    },
+    {
+     "key": "index.013",
+     "kind": "List item",
+     "en": "Cuplock, ledgers, transoms, boards, tubes and couplers",
+     "ar": "كابلوك وعوارض أفقية وعوارض عرضية وألواح وأنابيب ووصلات"
+    },
+    {
+     "key": "index.014",
+     "kind": "List item",
+     "en": "Erection and dismantling, top to bottom",
+     "ar": "تركيب وفك السقالات من الأعلى إلى الأسفل"
+    },
+    {
+     "key": "index.015",
+     "kind": "List item",
+     "en": "Used material bought back",
+     "ar": "شراء المواد المستعملة"
+    },
+    {
+     "key": "index.016",
+     "kind": "Link",
+     "en": "Scaffolding services",
+     "ar": "خدمات السقالات"
+    },
+    {
+     "key": "index.017",
+     "kind": "Heading",
+     "en": "One contractor for the wall and the access to it",
+     "ar": "مقاول واحد للعزل والسقالات معًا"
+    },
+    {
+     "key": "index.018",
+     "kind": "Paragraph",
+     "en": "Insulation crews cannot start until the scaffolding is up, and the scaffolding cannot come down until the finish is signed off. When we do both, it is one team, one programme and one point of contact.",
+     "ar": "لا يبدأ فريق العزل قبل تركيب السقالات، ولا تُفكّ السقالات قبل اعتماد التشطيب. عندما ننفّذ الاثنين يكون في الموقع فريق واحد وجدول واحد وجهة تواصل واحدة."
+    },
+    {
+     "key": "index.019",
+     "kind": "List item",
+     "en": "ESHP Phase 3",
+     "ar": "إسكان شرق سترة، المرحلة 3"
+    },
+    {
+     "key": "index.020",
+     "kind": "Small text",
+     "en": "East Sitra, 2025",
+     "ar": "شرق سترة، 2025"
+    },
+    {
+     "key": "index.021",
+     "kind": "List item",
+     "en": "Al Naseem Phase 3",
+     "ar": "النسيم، المرحلة 3"
+    },
+    {
+     "key": "index.022",
+     "kind": "Small text",
+     "en": "Diyar Al Muharraq, 2025",
+     "ar": "ديار المحرق، 2025"
+    },
+    {
+     "key": "index.023",
+     "kind": "List item",
+     "en": "East Hidd buildings",
+     "ar": "مباني شرق الحد"
+    },
+    {
+     "key": "index.024",
+     "kind": "Small text",
+     "en": "East Hidd, 2025",
+     "ar": "شرق الحد، 2025"
+    },
+    {
+     "key": "index.025",
+     "kind": "List item",
+     "en": "Building renovation",
+     "ar": "تجديد مبنى"
+    },
+    {
+     "key": "index.026",
+     "kind": "Small text",
+     "en": "Gufool, 2024",
+     "ar": "القفول، 2024"
+    },
+    {
+     "key": "index.027",
+     "kind": "Link",
+     "en": "See all projects",
+     "ar": "شاهد كل المشاريع"
+    },
+    {
+     "key": "index.028",
+     "kind": "Heading",
+     "en": "Recent projects",
+     "ar": "أحدث المشاريع"
+    },
+    {
+     "key": "index.029",
+     "kind": "Link",
+     "en": "All projects",
+     "ar": "كل المشاريع"
+    },
+    {
+     "key": "index.030",
+     "kind": "Heading",
+     "en": "Registered with the Electricity and Water Authority",
+     "ar": "مسجّلة لدى هيئة الكهرباء والماء"
+    },
+    {
+     "key": "index.031",
+     "kind": "Paragraph",
+     "en": "Both of our insulation systems hold EWA registration under Ministerial Order 149/2018. Certificate numbers, validity dates and certified materials are published on the Approvals page.",
+     "ar": "يحمل نظاما العزل لدينا تسجيلًا لدى هيئة الكهرباء والماء بموجب القرار الوزاري 149/2018. أرقام الشهادات وتواريخ الصلاحية والمواد المعتمدة منشورة في صفحة الاعتمادات."
+    },
+    {
+     "key": "index.032",
+     "kind": "Button",
+     "en": "View certificates",
+     "ar": "اعرض الشهادات"
+    },
+    {
+     "key": "index.033",
+     "kind": "Heading",
+     "en": "Who we have worked for",
+     "ar": "عملنا مع"
+    },
+    {
+     "key": "index.034",
+     "kind": "List item",
+     "en": "Ministry of Housing",
+     "ar": "وزارة الإسكان"
+    },
+    {
+     "key": "index.035",
+     "kind": "Heading",
+     "en": "Have an insulation or scaffolding job?",
+     "ar": "لديك مشروع عزل أو سقالات؟"
+    },
+    {
+     "key": "index.036",
+     "kind": "Paragraph",
+     "en": "Send us the drawings or a site address and we will reply with a quote.",
+     "ar": "أرسل لنا المخططات أو عنوان الموقع وسنرد عليك بعرض سعر."
+    },
+    {
+     "key": "index.037",
+     "kind": "Button",
+     "en": "Request a quote",
+     "ar": "اطلب عرض سعر"
+    },
+    {
+     "key": "index.038",
+     "kind": "Button",
+     "en": "Contact us",
+     "ar": "اتصل بنا"
+    }
+   ]
+  },
+  {
+   "slug": "about",
+   "name": "About us",
+   "title": "About us | Al-Fatiem Alarabi",
+   "description": "Al-Fatiem Alarabi: an EIFS insulation contractor in Bahrain since 2020, with its own scaffolding company since 2023.",
+   "blocks": [
+    {
+     "key": "about.001",
+     "kind": "Link",
+     "en": "Home",
+     "ar": "الرئيسية"
+    },
+    {
+     "key": "about.002",
+     "kind": "Text",
+     "en": "About us",
+     "ar": "من نحن"
+    },
+    {
+     "key": "about.003",
+     "kind": "Page heading",
+     "en": "A specialist insulation contractor, now with its own scaffolding company",
+     "ar": "مقاول عزل متخصص، ولديه الآن شركة سقالات خاصة به"
+    },
+    {
+     "key": "about.004",
+     "kind": "Paragraph",
+     "en": "Al-Fatiem Alarabi started in 2020 as an EIFS applicator. In 2023 we set up our own scaffolding supply and erection company, so insulation work no longer waits on someone else’s scaffold.",
+     "ar": "بدأت الفطيم العربي عام 2020 كمنفّذ لأنظمة العزل الخارجي. وفي 2023 أسّسنا شركتنا الخاصة لتوريد السقالات وتركيبها، فلم يعد العزل ينتظر سقالات طرف آخر."
+    },
+    {
+     "key": "about.005",
+     "kind": "Heading",
+     "en": "Do it right the first time",
+     "ar": "إنجاز العمل بإتقان من المرة الأولى"
+    },
+    {
+     "key": "about.006",
+     "kind": "Paragraph",
+     "en": "Our mission is to deliver reliable, high-quality EIFS that improves the performance, durability and energy efficiency of every building we work on.",
+     "ar": "رسالتنا تقديم أنظمة عزل خارجي موثوقة وعالية الجودة تحسّن أداء كل مبنى نعمل عليه ومتانته وكفاءته في استهلاك الطاقة."
+    },
+    {
+     "key": "about.007",
+     "kind": "Paragraph",
+     "en": "We want to be known as Bahrain’s most trusted EIFS contractor: for workmanship, for keeping our commitments to clients, and for safer, more efficient buildings across the Kingdom.",
+     "ar": "نطمح أن نكون مقاول العزل الخارجي الأكثر ثقة في البحرين: بجودة التنفيذ، والوفاء بالتزاماتنا تجاه العملاء، ومبانٍ أكثر أمانًا وكفاءة في أنحاء المملكة."
+    },
+    {
+     "key": "about.008",
+     "kind": "Heading",
+     "en": "How we work",
+     "ar": "كيف نعمل"
+    },
+    {
+     "key": "about.009",
+     "kind": "Label",
+     "en": "Quality",
+     "ar": "الجودة"
+    },
+    {
+     "key": "about.010",
+     "kind": "Value",
+     "en": "Every layer is applied with accuracy so the finish lasts.",
+     "ar": "تُنفَّذ كل طبقة بدقة ليدوم التشطيب."
+    },
+    {
+     "key": "about.011",
+     "kind": "Label",
+     "en": "Integrity",
+     "ar": "النزاهة"
+    },
+    {
+     "key": "about.012",
+     "kind": "Value",
+     "en": "We honour our commitments and keep every project transparent.",
+     "ar": "نفي بالتزاماتنا ونحافظ على الشفافية في كل مشروع."
+    },
+    {
+     "key": "about.013",
+     "kind": "Label",
+     "en": "Safety",
+     "ar": "السلامة"
+    },
+    {
+     "key": "about.014",
+     "kind": "Value",
+     "en": "The wellbeing of people comes first, on site and in the finished building.",
+     "ar": "سلامة الأشخاص أولًا، في الموقع وفي المبنى المكتمل."
+    },
+    {
+     "key": "about.015",
+     "kind": "Label",
+     "en": "Innovation",
+     "ar": "الابتكار"
+    },
+    {
+     "key": "about.016",
+     "kind": "Value",
+     "en": "We adopt modern materials and techniques as construction standards change.",
+     "ar": "نعتمد مواد وتقنيات حديثة مع تطوّر معايير البناء."
+    },
+    {
+     "key": "about.017",
+     "kind": "Label",
+     "en": "Commitment",
+     "ar": "الالتزام"
+    },
+    {
+     "key": "about.018",
+     "kind": "Value",
+     "en": "From planning to handover, no shortcuts.",
+     "ar": "من التخطيط إلى التسليم، دون اختصارات."
+    },
+    {
+     "key": "about.019",
+     "kind": "Heading",
+     "en": "Led by the founder, run by site supervisors",
+     "ar": "بقيادة المؤسس وإدارة مشرفي المواقع"
+    },
+    {
+     "key": "about.020",
+     "kind": "Paragraph",
+     "en": "Mr. Faruk Miah founded the company and leads every project. He is supported by a site engineer, a quality supervisor, a general supervisor, site supervisors and foremen.",
+     "ar": "أسّس السيد فاروق ميا الشركة ويقود كل مشروع. ويدعمه مهندس موقع ومشرف جودة ومشرف عام ومشرفو مواقع ومراقبو عمل."
+    },
+    {
+     "key": "about.021",
+     "kind": "Paragraph",
+     "en": "The insulation division has more than 40 trained applicators and the scaffolding division around 40 crew, each with its own supervisors.",
+     "ar": "يضم قسم العزل أكثر من 40 عامل تنفيذ مدرّبًا، ويضم قسم السقالات نحو 40 من أفراد الطاقم، ولكل قسم مشرفوه."
+    },
+    {
+     "key": "about.022",
+     "kind": "Heading",
+     "en": "The right tool for each layer",
+     "ar": "الأداة المناسبة لكل طبقة"
+    },
+    {
+     "key": "about.023",
+     "kind": "Paragraph",
+     "en": "Trowels and scrapers, hot-wire cutters for EPS, hammer drills for dowels and mixers for basecoat.",
+     "ar": "مالجات ومكاشط، وقواطع سلكية ساخنة للبوليسترين، ومطارق حفر للمسامير، وخلاطات لطبقة الأساس."
+    },
+    {
+     "key": "about.024",
+     "kind": "Heading",
+     "en": "Two registered companies",
+     "ar": "شركتان مسجّلتان"
+    },
+    {
+     "key": "about.025",
+     "kind": "Table heading",
+     "en": "Division",
+     "ar": "القسم"
+    },
+    {
+     "key": "about.026",
+     "kind": "Table heading",
+     "en": "Legal name",
+     "ar": "الاسم القانوني"
+    },
+    {
+     "key": "about.027",
+     "kind": "Table heading",
+     "en": "CR no.",
+     "ar": "رقم السجل"
+    },
+    {
+     "key": "about.028",
+     "kind": "Table heading",
+     "en": "Notes",
+     "ar": "ملاحظات"
+    },
+    {
+     "key": "about.029",
+     "kind": "Table cell",
+     "en": "Thermal insulation (EIFS)",
+     "ar": "العزل الحراري (EIFS)"
+    },
+    {
+     "key": "about.030",
+     "kind": "Table cell",
+     "en": "Registered 28 July 2020",
+     "ar": "مسجّلة في 28 يوليو 2020"
+    },
+    {
+     "key": "about.031",
+     "kind": "Table cell",
+     "en": "Scaffolding",
+     "ar": "السقالات"
+    },
+    {
+     "key": "about.032",
+     "kind": "Table cell",
+     "en": "Established 2023. Holds the EWA registrations for AL FATIEM EIFS and EIFS PRO.",
+     "ar": "تأسست 2023. صاحبة تسجيل AL FATIEM EIFS وEIFS PRO لدى الهيئة."
+    },
+    {
+     "key": "about.033",
+     "kind": "Paragraph",
+     "en": "P.O. Box 17136, Building 791, Road 425, Block 404, Sanabis, Kingdom of Bahrain",
+     "ar": "ص.ب 17136 · مبنى 791، طريق 425، مجمع 404، السنابس، مملكة البحرين"
+    },
+    {
+     "key": "about.034",
+     "kind": "Heading",
+     "en": "Have an insulation or scaffolding job?",
+     "ar": "لديك مشروع عزل أو سقالات؟"
+    },
+    {
+     "key": "about.035",
+     "kind": "Paragraph",
+     "en": "Send us the drawings or a site address and we will reply with a quote.",
+     "ar": "أرسل لنا المخططات أو عنوان الموقع وسنرد عليك بعرض سعر."
+    },
+    {
+     "key": "about.036",
+     "kind": "Button",
+     "en": "Request a quote",
+     "ar": "اطلب عرض سعر"
+    },
+    {
+     "key": "about.037",
+     "kind": "Button",
+     "en": "Contact us",
+     "ar": "اتصل بنا"
+    }
+   ]
+  },
+  {
+   "slug": "services",
+   "name": "Services",
+   "title": "Services | Al-Fatiem Alarabi",
+   "description": "External thermal insulation (EIFS) and scaffolding services in Bahrain: supply, rental, erection, dismantling and buy-back.",
+   "blocks": [
+    {
+     "key": "services.001",
+     "kind": "Link",
+     "en": "Home",
+     "ar": "الرئيسية"
+    },
+    {
+     "key": "services.002",
+     "kind": "Text",
+     "en": "Services",
+     "ar": "الخدمات"
+    },
+    {
+     "key": "services.003",
+     "kind": "Page heading",
+     "en": "Insulation and scaffolding, with our own crews",
+     "ar": "العزل والسقالات بفرقنا الخاصة"
+    },
+    {
+     "key": "services.004",
+     "kind": "Paragraph",
+     "en": "Each division has its own crews and supervisors. When a project needs both, we quote them together.",
+     "ar": "لكل قسم فرقه ومشرفوه. وعندما يحتاج المشروع إلى الاثنين نقدّم عرض سعر واحدًا لهما."
+    },
+    {
+     "key": "services.005",
+     "kind": "Heading",
+     "en": "A wall built in eight layers",
+     "ar": "جدار من ثماني طبقات"
+    },
+    {
+     "key": "services.006",
+     "kind": "Paragraph",
+     "en": "External insulation and finish systems wrap the outside of the building. Choose a layer to see what it does and who supplies it under our EWA registrations.",
+     "ar": "تغلّف أنظمة العزل والتشطيب الخارجي المبنى من الخارج. اختر طبقة لترى وظيفتها ومن يورّدها ضمن تسجيلاتنا لدى الهيئة."
+    },
+    {
+     "key": "services.007",
+     "kind": "Heading",
+     "en": "How an insulation job runs",
+     "ar": "كيف يسير عمل العزل"
+    },
+    {
+     "key": "services.008",
+     "kind": "Bold text",
+     "en": "Survey",
+     "ar": "المعاينة"
+    },
+    {
+     "key": "services.009",
+     "kind": "Text",
+     "en": "Check the substrate, openings and drawings.",
+     "ar": "فحص الجدار والفتحات والمخططات."
+    },
+    {
+     "key": "services.010",
+     "kind": "Bold text",
+     "en": "Fix the board",
+     "ar": "تثبيت اللوح"
+    },
+    {
+     "key": "services.011",
+     "kind": "Text",
+     "en": "Adhesive and dowels hold the EPS to the wall.",
+     "ar": "مادة اللصق والمسامير تثبّت البوليسترين على الجدار."
+    },
+    {
+     "key": "services.012",
+     "kind": "Bold text",
+     "en": "Mesh and basecoat",
+     "ar": "الشبك وطبقة الأساس"
+    },
+    {
+     "key": "services.013",
+     "kind": "Text",
+     "en": "Reinforcing mesh set into the basecoat.",
+     "ar": "شبك التسليح مدفون في طبقة الأساس."
+    },
+    {
+     "key": "services.014",
+     "kind": "Bold text",
+     "en": "Primer and finish",
+     "ar": "التأسيس والتشطيب"
+    },
+    {
+     "key": "services.015",
+     "kind": "Text",
+     "en": "Primer, then the decorative finish.",
+     "ar": "طبقة التأسيس ثم التشطيب الزخرفي."
+    },
+    {
+     "key": "services.016",
+     "kind": "Bold text",
+     "en": "Inspect and hand over",
+     "ar": "الفحص والتسليم"
+    },
+    {
+     "key": "services.017",
+     "kind": "Text",
+     "en": "Quality supervisor signs off each facade.",
+     "ar": "مشرف الجودة يعتمد كل واجهة."
+    },
+    {
+     "key": "services.018",
+     "kind": "Heading",
+     "en": "Will the wall meet the 0.57 U-value limit?",
+     "ar": "هل سيحقق الجدار حد معامل الانتقال 0.57؟"
+    },
+    {
+     "key": "services.019",
+     "kind": "Paragraph",
+     "en": "The EWA certificates require the finished wall to stay at or below 0.57 W/m²K. Try a wall type and a board thickness.",
+     "ar": "تشترط شهادات الهيئة ألا يتجاوز الجدار المكتمل 0.57 واط/م²·كلفن. جرّب نوع الجدار وسماكة اللوح."
+    },
+    {
+     "key": "services.020",
+     "kind": "Form label",
+     "en": "Wall type (200 mm)",
+     "ar": "نوع الجدار (200 مم)"
+    },
+    {
+     "key": "services.021",
+     "kind": "Form label",
+     "en": "EPS board thickness",
+     "ar": "سماكة لوح البوليسترين"
+    },
+    {
+     "key": "services.022",
+     "kind": "Paragraph",
+     "en": "Uses λ = 0.0382 W/m·K from the EWA certificates and typical wall values. Indicative only; the project engineer confirms the final build-up.",
+     "ar": "يستخدم λ = 0.0382 واط/م·كلفن من شهادات الهيئة وقيمًا نموذجية للجدران. تقريبي فقط؛ ويؤكد مهندس المشروع التركيب النهائي."
+    },
+    {
+     "key": "services.023",
+     "kind": "Heading",
+     "en": "Scaffolding: supply, rental, erection and buy-back",
+     "ar": "السقالات: توريد وتأجير وتركيب وإعادة شراء"
+    },
+    {
+     "key": "services.024",
+     "kind": "Paragraph",
+     "en": "Our scaffolding company supplies material and crews for construction, maintenance and industrial work. Used material is bought back.",
+     "ar": "توفّر شركة السقالات لدينا المواد والطواقم لأعمال الإنشاء والصيانة والأعمال الصناعية. ونشتري المواد المستعملة."
+    },
+    {
+     "key": "services.025",
+     "kind": "Heading",
+     "en": "Planning and drawings",
+     "ar": "التخطيط والمخططات"
+    },
+    {
+     "key": "services.026",
+     "kind": "Paragraph",
+     "en": "Material, labour and equipment worked out, with layouts that guide a safe build.",
+     "ar": "تحديد المواد والعمالة والمعدات مع مخططات توجّه التنفيذ الآمن."
+    },
+    {
+     "key": "services.027",
+     "kind": "Heading",
+     "en": "Supply and delivery",
+     "ar": "التوريد والتسليم"
+    },
+    {
+     "key": "services.028",
+     "kind": "Paragraph",
+     "en": "Material delivered on time and removed when the job ends.",
+     "ar": "تسليم المواد في موعدها وإزالتها عند انتهاء العمل."
+    },
+    {
+     "key": "services.029",
+     "kind": "Heading",
+     "en": "Erection and dismantling",
+     "ar": "التركيب والفك"
+    },
+    {
+     "key": "services.030",
+     "kind": "Paragraph",
+     "en": "Full installation and modification, then dismantling in reverse from top to bottom.",
+     "ar": "تركيب وتعديل كامل ثم فك بالترتيب العكسي من الأعلى إلى الأسفل."
+    },
+    {
+     "key": "services.031",
+     "kind": "Heading",
+     "en": "Rental",
+     "ar": "التأجير"
+    },
+    {
+     "key": "services.032",
+     "kind": "Paragraph",
+     "en": "Scaffolding material on rental for the length of your programme.",
+     "ar": "مواد السقالات بالإيجار طوال مدة برنامج العمل."
+    },
+    {
+     "key": "services.033",
+     "kind": "Heading",
+     "en": "Sale of new and used material",
+     "ar": "بيع المواد الجديدة والمستعملة"
+    },
+    {
+     "key": "services.034",
+     "kind": "Paragraph",
+     "en": "New and used stock sold by the piece or by the project.",
+     "ar": "مخزون جديد ومستعمل يُباع بالقطعة أو للمشروع."
+    },
+    {
+     "key": "services.035",
+     "kind": "Heading",
+     "en": "Inspection, maintenance and repair",
+     "ar": "الفحص والصيانة والإصلاح"
+    },
+    {
+     "key": "services.036",
+     "kind": "Paragraph",
+     "en": "Regular inspections and repairs to keep systems safe during the job.",
+     "ar": "فحوصات دورية وإصلاحات للحفاظ على سلامة المنظومة أثناء العمل."
+    },
+    {
+     "key": "services.037",
+     "kind": "Heading",
+     "en": "What we stock",
+     "ar": "ما نوفّره"
+    },
+    {
+     "key": "services.038",
+     "kind": "List item",
+     "en": "Cuplock systems",
+     "ar": "أنظمة كابلوك"
+    },
+    {
+     "key": "services.039",
+     "kind": "List item",
+     "en": "Ledgers and transoms",
+     "ar": "عوارض أفقية وعرضية"
+    },
+    {
+     "key": "services.040",
+     "kind": "List item",
+     "en": "Wooden boards",
+     "ar": "ألواح خشبية"
+    },
+    {
+     "key": "services.041",
+     "kind": "List item",
+     "en": "GI tubes",
+     "ar": "أنابيب مجلفنة"
+    },
+    {
+     "key": "services.042",
+     "kind": "List item",
+     "en": "Fittings and couplers",
+     "ar": "وصلات ومشابك"
+    },
+    {
+     "key": "services.043",
+     "kind": "List item",
+     "en": "Aluminium ladders and base jacks",
+     "ar": "سلالم ألمنيوم وقواعد قابلة للضبط"
+    },
+    {
+     "key": "services.044",
+     "kind": "Button",
+     "en": "Ask for scaffolding rates",
+     "ar": "اطلب أسعار السقالات"
+    },
+    {
+     "key": "services.045",
+     "kind": "Heading",
+     "en": "How a scaffolding job runs",
+     "ar": "كيف يسير عمل السقالات"
+    },
+    {
+     "key": "services.046",
+     "kind": "Bold text",
+     "en": "Assess",
+     "ar": "التقييم"
+    },
+    {
+     "key": "services.047",
+     "kind": "Text",
+     "en": "Site visit and requirements.",
+     "ar": "زيارة الموقع وتحديد المتطلبات."
+    },
+    {
+     "key": "services.048",
+     "kind": "Bold text",
+     "en": "Plan",
+     "ar": "التخطيط"
+    },
+    {
+     "key": "services.049",
+     "kind": "Text",
+     "en": "Drawings, quantities and programme.",
+     "ar": "مخططات وكميات وبرنامج زمني."
+    },
+    {
+     "key": "services.050",
+     "kind": "Bold text",
+     "en": "Erect",
+     "ar": "التركيب"
+    },
+    {
+     "key": "services.051",
+     "kind": "Text",
+     "en": "Crew builds to the drawing.",
+     "ar": "يبني الطاقم وفق المخطط."
+    },
+    {
+     "key": "services.052",
+     "kind": "Bold text",
+     "en": "Inspect",
+     "ar": "الفحص"
+    },
+    {
+     "key": "services.053",
+     "kind": "Text",
+     "en": "Regular checks while it stands.",
+     "ar": "فحوصات منتظمة أثناء وجودها."
+    },
+    {
+     "key": "services.054",
+     "kind": "Bold text",
+     "en": "Dismantle",
+     "ar": "الفك"
+    },
+    {
+     "key": "services.055",
+     "kind": "Text",
+     "en": "Top to bottom, material cleared.",
+     "ar": "من الأعلى إلى الأسفل مع إزالة المواد."
+    },
+    {
+     "key": "services.056",
+     "kind": "Heading",
+     "en": "Have an insulation or scaffolding job?",
+     "ar": "لديك مشروع عزل أو سقالات؟"
+    },
+    {
+     "key": "services.057",
+     "kind": "Paragraph",
+     "en": "Send us the drawings or a site address and we will reply with a quote.",
+     "ar": "أرسل لنا المخططات أو عنوان الموقع وسنرد عليك بعرض سعر."
+    },
+    {
+     "key": "services.058",
+     "kind": "Button",
+     "en": "Request a quote",
+     "ar": "اطلب عرض سعر"
+    },
+    {
+     "key": "services.059",
+     "kind": "Button",
+     "en": "Contact us",
+     "ar": "اتصل بنا"
+    }
+   ]
+  },
+  {
+   "slug": "projects",
+   "name": "Projects",
+   "title": "Projects | Al-Fatiem Alarabi",
+   "description": "Insulation and scaffolding projects for the Ministry of Housing, private villas and commercial buildings across Bahrain.",
+   "blocks": [
+    {
+     "key": "projects.001",
+     "kind": "Link",
+     "en": "Home",
+     "ar": "الرئيسية"
+    },
+    {
+     "key": "projects.002",
+     "kind": "Text",
+     "en": "Projects",
+     "ar": "المشاريع"
+    },
+    {
+     "key": "projects.003",
+     "kind": "Page heading",
+     "en": "Twenty projects across Bahrain",
+     "ar": "عشرون مشروعًا في أنحاء البحرين"
+    },
+    {
+     "key": "projects.004",
+     "kind": "Paragraph",
+     "en": "Government housing schemes, private villas and commercial buildings across Bahrain, 2021 to 2025. The area is the insulated wall area on each project, where recorded.",
+     "ar": "مشاريع إسكان حكومية وفلل خاصة ومبانٍ تجارية في أنحاء البحرين، من 2021 إلى 2025. المساحة هي مساحة الجدران المعزولة في كل مشروع حيث تتوفر."
+    },
+    {
+     "key": "projects.005",
+     "kind": "Text",
+     "en": "Project",
+     "ar": "المشروع"
+    },
+    {
+     "key": "projects.006",
+     "kind": "Text",
+     "en": "Area",
+     "ar": "المساحة"
+    },
+    {
+     "key": "projects.007",
+     "kind": "Text",
+     "en": "Client",
+     "ar": "العميل"
+    },
+    {
+     "key": "projects.008",
+     "kind": "Heading",
+     "en": "More residential work",
+     "ar": "المزيد من الأعمال السكنية"
+    },
+    {
+     "key": "projects.009",
+     "kind": "Photo caption",
+     "en": "Three-storey residence",
+     "ar": "مبنى سكني من ثلاثة طوابق"
+    },
+    {
+     "key": "projects.010",
+     "kind": "Photo caption",
+     "en": "Villa, Karranah",
+     "ar": "فيلا، كرانة"
+    },
+    {
+     "key": "projects.011",
+     "kind": "Heading",
+     "en": "Want to see more?",
+     "ar": "تريد الاطلاع على المزيد؟"
+    },
+    {
+     "key": "projects.012",
+     "kind": "Paragraph",
+     "en": "Ask for our full project list and references.",
+     "ar": "اطلب قائمة المشاريع الكاملة والمراجع."
+    },
+    {
+     "key": "projects.013",
+     "kind": "Button",
+     "en": "Request a quote",
+     "ar": "اطلب عرض سعر"
+    },
+    {
+     "key": "projects.014",
+     "kind": "Button",
+     "en": "Contact us",
+     "ar": "اتصل بنا"
+    }
+   ]
+  },
+  {
+   "slug": "approvals",
+   "name": "Approvals",
+   "title": "Approvals | Al-Fatiem Alarabi",
+   "description": "EWA registration certificates for the AL FATIEM EIFS and EIFS PRO thermal insulation systems.",
+   "blocks": [
+    {
+     "key": "approvals.001",
+     "kind": "Link",
+     "en": "Home",
+     "ar": "الرئيسية"
+    },
+    {
+     "key": "approvals.002",
+     "kind": "Text",
+     "en": "Approvals",
+     "ar": "الاعتمادات"
+    },
+    {
+     "key": "approvals.003",
+     "kind": "Page heading",
+     "en": "EWA-registered insulation systems",
+     "ar": "أنظمة عزل مسجّلة لدى هيئة الكهرباء والماء"
+    },
+    {
+     "key": "approvals.004",
+     "kind": "Paragraph",
+     "en": "Both of our insulation systems are registered with the Electricity and Water Authority (EWA) under Ministerial Order 149/2018.",
+     "ar": "نظاما العزل لدينا مسجّلان لدى هيئة الكهرباء والماء بموجب القرار الوزاري 149/2018."
+    },
+    {
+     "key": "approvals.005",
+     "kind": "Label",
+     "en": "Certificate no.",
+     "ar": "رقم الشهادة"
+    },
+    {
+     "key": "approvals.006",
+     "kind": "Label",
+     "en": "Registered",
+     "ar": "تاريخ التسجيل"
+    },
+    {
+     "key": "approvals.007",
+     "kind": "Value",
+     "en": "2 December 2025",
+     "ar": "2 ديسمبر 2025"
+    },
+    {
+     "key": "approvals.008",
+     "kind": "Label",
+     "en": "Valid until",
+     "ar": "صالحة حتى"
+    },
+    {
+     "key": "approvals.009",
+     "kind": "Value",
+     "en": "31 December 2027",
+     "ar": "31 ديسمبر 2027"
+    },
+    {
+     "key": "approvals.010",
+     "kind": "Label",
+     "en": "Issued to",
+     "ar": "أُصدرت إلى"
+    },
+    {
+     "key": "approvals.011",
+     "kind": "Label",
+     "en": "Manufacturer",
+     "ar": "المصنّع"
+    },
+    {
+     "key": "approvals.012",
+     "kind": "Label",
+     "en": "Glass-fibre mesh",
+     "ar": "شبك الألياف الزجاجية"
+    },
+    {
+     "key": "approvals.013",
+     "kind": "Label",
+     "en": "Certificate no.",
+     "ar": "رقم الشهادة"
+    },
+    {
+     "key": "approvals.014",
+     "kind": "Label",
+     "en": "Registered",
+     "ar": "تاريخ التسجيل"
+    },
+    {
+     "key": "approvals.015",
+     "kind": "Value",
+     "en": "18 September 2025",
+     "ar": "18 سبتمبر 2025"
+    },
+    {
+     "key": "approvals.016",
+     "kind": "Label",
+     "en": "Valid until",
+     "ar": "صالحة حتى"
+    },
+    {
+     "key": "approvals.017",
+     "kind": "Value",
+     "en": "30 September 2027",
+     "ar": "30 سبتمبر 2027"
+    },
+    {
+     "key": "approvals.018",
+     "kind": "Label",
+     "en": "Issued to",
+     "ar": "أُصدرت إلى"
+    },
+    {
+     "key": "approvals.019",
+     "kind": "Label",
+     "en": "Manufacturer",
+     "ar": "المصنّع"
+    },
+    {
+     "key": "approvals.020",
+     "kind": "Label",
+     "en": "Glass-fibre mesh",
+     "ar": "شبك الألياف الزجاجية"
+    },
+    {
+     "key": "approvals.021",
+     "kind": "Heading",
+     "en": "What the certificates say",
+     "ar": "ما تنص عليه الشهادات"
+    },
+    {
+     "key": "approvals.022",
+     "kind": "Table heading",
+     "en": "Property",
+     "ar": "الخاصية"
+    },
+    {
+     "key": "approvals.023",
+     "kind": "Table heading",
+     "en": "Value",
+     "ar": "القيمة"
+    },
+    {
+     "key": "approvals.024",
+     "kind": "Table heading",
+     "en": "Meaning",
+     "ar": "المعنى"
+    },
+    {
+     "key": "approvals.025",
+     "kind": "Table cell",
+     "en": "Density",
+     "ar": "الكثافة"
+    },
+    {
+     "key": "approvals.026",
+     "kind": "Table cell",
+     "en": "Density of the EPS core.",
+     "ar": "كثافة لب البوليسترين."
+    },
+    {
+     "key": "approvals.027",
+     "kind": "Table cell",
+     "en": "Minimum thickness",
+     "ar": "الحد الأدنى للسماكة"
+    },
+    {
+     "key": "approvals.028",
+     "kind": "Table cell",
+     "en": "Thinnest insulation board covered by the registration.",
+     "ar": "أقل سماكة للوح العزل يغطيها التسجيل."
+    },
+    {
+     "key": "approvals.029",
+     "kind": "Table cell",
+     "en": "Thermal conductivity (k)",
+     "ar": "الموصلية الحرارية (k)"
+    },
+    {
+     "key": "approvals.030",
+     "kind": "Table cell",
+     "en": "Lower is better.",
+     "ar": "كلما انخفضت كان أفضل."
+    },
+    {
+     "key": "approvals.031",
+     "kind": "Table cell",
+     "en": "Thermal transmittance (C)",
+     "ar": "الانتقال الحراري (C)"
+    },
+    {
+     "key": "approvals.032",
+     "kind": "Table cell",
+     "en": "For the 55 mm board alone.",
+     "ar": "للوح بسماكة 55 مم وحده."
+    },
+    {
+     "key": "approvals.033",
+     "kind": "Table cell",
+     "en": "Wall U-value limit",
+     "ar": "حد معامل انتقال الجدار"
+    },
+    {
+     "key": "approvals.034",
+     "kind": "Table cell",
+     "en": "The overall wall must not exceed this value.",
+     "ar": "يجب ألا يتجاوز الجدار ككل هذه القيمة."
+    },
+    {
+     "key": "approvals.035",
+     "kind": "Paragraph",
+     "en": "Registration covers thermal insulation only. Other approvals the project needs must be sought separately, and EWA may inspect and sample on site.",
+     "ar": "يغطي التسجيل العزل الحراري فقط. وتُطلب أي موافقات أخرى يحتاجها المشروع بشكل منفصل، وللهيئة حق التفتيش وأخذ العينات في الموقع."
+    },
+    {
+     "key": "approvals.036",
+     "kind": "Heading",
+     "en": "Ministry of Industry and Commerce",
+     "ar": "وزارة الصناعة والتجارة"
+    },
+    {
+     "key": "approvals.037",
+     "kind": "Label",
+     "en": "Insulation division",
+     "ar": "قسم العزل"
+    },
+    {
+     "key": "approvals.038",
+     "kind": "Label",
+     "en": "Scaffolding division",
+     "ar": "قسم السقالات"
+    },
+    {
+     "key": "approvals.039",
+     "kind": "Label",
+     "en": "Registered since",
+     "ar": "مسجّلة منذ"
+    },
+    {
+     "key": "approvals.040",
+     "kind": "Value",
+     "en": "July 2020 (insulation)",
+     "ar": "يوليو 2020 (العزل)"
+    },
+    {
+     "key": "approvals.041",
+     "kind": "Label",
+     "en": "Address",
+     "ar": "العنوان"
+    },
+    {
+     "key": "approvals.042",
+     "kind": "Value",
+     "en": "Sanabis, Kingdom of Bahrain",
+     "ar": "السنابس، مملكة البحرين"
+    },
+    {
+     "key": "approvals.043",
+     "kind": "Heading",
+     "en": "Need documents for a tender or prequalification?",
+     "ar": "تحتاج مستندات لمناقصة أو تأهيل مسبق؟"
+    },
+    {
+     "key": "approvals.044",
+     "kind": "Paragraph",
+     "en": "Ask for our prequalification pack: company profile, registrations, certificates and project references.",
+     "ar": "اطلب ملف التأهيل المسبق: الملف التعريفي والتسجيلات والشهادات ومراجع المشاريع."
+    },
+    {
+     "key": "approvals.045",
+     "kind": "Button",
+     "en": "Request the pack",
+     "ar": "اطلب الملف"
+    }
+   ]
+  },
+  {
+   "slug": "news",
+   "name": "News",
+   "title": "News | Al-Fatiem Alarabi",
+   "description": "Approvals, completed projects and company updates from Al-Fatiem Alarabi.",
+   "blocks": [
+    {
+     "key": "news.001",
+     "kind": "Page heading",
+     "en": "News",
+     "ar": "الأخبار"
+    },
+    {
+     "key": "news.002",
+     "kind": "Paragraph",
+     "en": "New registrations, completed projects and company updates.",
+     "ar": "التسجيلات الجديدة والمشاريع المنجزة وأخبار الشركة."
+    },
+    {
+     "key": "news.003",
+     "kind": "Button",
+     "en": "All news",
+     "ar": "كل الأخبار"
+    },
+    {
+     "key": "news.004",
+     "kind": "Button",
+     "en": "Read the article",
+     "ar": "اقرأ الخبر"
+    },
+    {
+     "key": "news.005",
+     "kind": "Heading",
+     "en": "More news",
+     "ar": "المزيد من الأخبار"
+    },
+    {
+     "key": "news.006",
+     "kind": "Paragraph",
+     "en": "No news in this category yet.",
+     "ar": "لا توجد أخبار في هذا التصنيف بعد."
+    },
+    {
+     "key": "news.007",
+     "kind": "Heading",
+     "en": "Have an insulation or scaffolding job?",
+     "ar": "لديك مشروع عزل أو سقالات؟"
+    },
+    {
+     "key": "news.008",
+     "kind": "Paragraph",
+     "en": "Send us the drawings or a site address and we will reply with a quote.",
+     "ar": "أرسل لنا المخططات أو عنوان الموقع وسنرد عليك بعرض سعر."
+    },
+    {
+     "key": "news.009",
+     "kind": "Button",
+     "en": "Request a quote",
+     "ar": "اطلب عرض سعر"
+    },
+    {
+     "key": "news.010",
+     "kind": "Label",
+     "en": "Opens in a new tab",
+     "ar": "يفتح في علامة تبويب جديدة"
+    },
+    {
+     "key": "news.011",
+     "kind": "Link",
+     "en": "Back to all news",
+     "ar": "العودة إلى كل الأخبار"
+    },
+    {
+     "key": "news.012",
+     "kind": "Heading",
+     "en": "Photos",
+     "ar": "الصور"
+    }
+   ]
+  },
+  {
+   "slug": "inquiries",
+   "name": "Inquiries",
+   "title": "Inquiries | Al-Fatiem Alarabi",
+   "description": "Request an insulation quote, scaffolding rates or tender documents from Al-Fatiem Alarabi.",
+   "blocks": [
+    {
+     "key": "inquiries.001",
+     "kind": "Link",
+     "en": "Home",
+     "ar": "الرئيسية"
+    },
+    {
+     "key": "inquiries.002",
+     "kind": "Text",
+     "en": "Inquiries",
+     "ar": "الاستفسارات"
+    },
+    {
+     "key": "inquiries.003",
+     "kind": "Page heading",
+     "en": "Request a quote",
+     "ar": "اطلب عرض سعر"
+    },
+    {
+     "key": "inquiries.004",
+     "kind": "Paragraph",
+     "en": "Choose what you need, fill in the details and send the request to us on WhatsApp.",
+     "ar": "اختر نوع الطلب واملأ التفاصيل وأرسله إلينا عبر واتساب."
+    },
+    {
+     "key": "inquiries.005",
+     "kind": "Form label",
+     "en": "What do you need?",
+     "ar": "ماذا تحتاج؟"
+    },
+    {
+     "key": "inquiries.006",
+     "kind": "Form label",
+     "en": "Name",
+     "ar": "الاسم"
+    },
+    {
+     "key": "inquiries.007",
+     "kind": "Text",
+     "en": "Enter your name.",
+     "ar": "أدخل اسمك."
+    },
+    {
+     "key": "inquiries.008",
+     "kind": "Form label",
+     "en": "Company",
+     "ar": "الشركة"
+    },
+    {
+     "key": "inquiries.009",
+     "kind": "Form label",
+     "en": "Phone or WhatsApp",
+     "ar": "الهاتف أو واتساب"
+    },
+    {
+     "key": "inquiries.010",
+     "kind": "Text",
+     "en": "Enter a phone or WhatsApp number so we can reply.",
+     "ar": "أدخل رقم هاتف أو واتساب لنتمكن من الرد."
+    },
+    {
+     "key": "inquiries.011",
+     "kind": "Form label",
+     "en": "Project location",
+     "ar": "موقع المشروع"
+    },
+    {
+     "key": "inquiries.012",
+     "kind": "Form label",
+     "en": "Details",
+     "ar": "التفاصيل"
+    },
+    {
+     "key": "inquiries.013",
+     "kind": "Button",
+     "en": "Prepare WhatsApp message",
+     "ar": "جهّز رسالة واتساب"
+    },
+    {
+     "key": "inquiries.014",
+     "kind": "Bold text",
+     "en": "Your request is ready",
+     "ar": "طلبك جاهز"
+    },
+    {
+     "key": "inquiries.015",
+     "kind": "Button",
+     "en": "Send on WhatsApp",
+     "ar": "أرسل عبر واتساب"
+    },
+    {
+     "key": "inquiries.016",
+     "kind": "Button",
+     "en": "Copy message",
+     "ar": "انسخ الرسالة"
+    },
+    {
+     "key": "inquiries.017",
+     "kind": "Paragraph",
+     "en": "Nothing has been sent yet. Select Send on WhatsApp to open the message in WhatsApp.",
+     "ar": "لم يُرسل شيء بعد. اضغط «أرسل عبر واتساب» لفتح الرسالة في واتساب."
+    },
+    {
+     "key": "inquiries.018",
+     "kind": "Heading",
+     "en": "Scaffolding quantity estimator",
+     "ar": "حاسبة كميات السقالات"
+    },
+    {
+     "key": "inquiries.019",
+     "kind": "Paragraph",
+     "en": "Enter the wall size to estimate the main components.",
+     "ar": "أدخل أبعاد الجدار لتقدير المكونات الرئيسية."
+    },
+    {
+     "key": "inquiries.020",
+     "kind": "Form label",
+     "en": "Length (m)",
+     "ar": "الطول (م)"
+    },
+    {
+     "key": "inquiries.021",
+     "kind": "Form label",
+     "en": "Height (m)",
+     "ar": "الارتفاع (م)"
+    },
+    {
+     "key": "inquiries.022",
+     "kind": "Form label",
+     "en": "Width (m)",
+     "ar": "العرض (م)"
+    },
+    {
+     "key": "inquiries.023",
+     "kind": "Paragraph",
+     "en": "Indicative only. Final quantities come from our drawing.",
+     "ar": "تقديري فقط. الكميات النهائية تأتي من مخططنا."
+    },
+    {
+     "key": "inquiries.024",
+     "kind": "Button",
+     "en": "Add to my request",
+     "ar": "أضِف إلى طلبي"
+    },
+    {
+     "key": "inquiries.025",
+     "kind": "Heading",
+     "en": "Or reach us directly",
+     "ar": "أو تواصل معنا مباشرة"
+    },
+    {
+     "key": "inquiries.026",
+     "kind": "Text",
+     "en": "WhatsApp",
+     "ar": "واتساب"
+    },
+    {
+     "key": "inquiries.027",
+     "kind": "Text",
+     "en": "Phone",
+     "ar": "الهاتف"
+    },
+    {
+     "key": "inquiries.028",
+     "kind": "Text",
+     "en": "Email",
+     "ar": "البريد"
+    },
+    {
+     "key": "inquiries.029",
+     "kind": "Text",
+     "en": "Hours",
+     "ar": "ساعات العمل"
+    },
+    {
+     "key": "inquiries.030",
+     "kind": "Bold text",
+     "en": "Saturday to Thursday, 8:00 to 17:00",
+     "ar": "السبت إلى الخميس، 8:00 إلى 17:00"
+    }
+   ]
+  },
+  {
+   "slug": "contact",
+   "name": "Contact us",
+   "title": "Contact us | Al-Fatiem Alarabi",
+   "description": "Contact Al-Fatiem Alarabi in Sanabis, Bahrain by phone, WhatsApp or email.",
+   "blocks": [
+    {
+     "key": "contact.001",
+     "kind": "Link",
+     "en": "Home",
+     "ar": "الرئيسية"
+    },
+    {
+     "key": "contact.002",
+     "kind": "Text",
+     "en": "Contact us",
+     "ar": "اتصل بنا"
+    },
+    {
+     "key": "contact.003",
+     "kind": "Page heading",
+     "en": "Contact us",
+     "ar": "اتصل بنا"
+    },
+    {
+     "key": "contact.004",
+     "kind": "Paragraph",
+     "en": "Call, message or visit our office in Sanabis. WhatsApp is the quickest way to reach us.",
+     "ar": "اتصل بنا أو راسلنا أو زر مكتبنا في السنابس. واتساب أسرع طريقة للتواصل معنا."
+    },
+    {
+     "key": "contact.005",
+     "kind": "Heading",
+     "en": "Our office",
+     "ar": "مكتبنا"
+    },
+    {
+     "key": "contact.006",
+     "kind": "Text",
+     "en": "WhatsApp",
+     "ar": "واتساب"
+    },
+    {
+     "key": "contact.007",
+     "kind": "Text",
+     "en": "Phone",
+     "ar": "الهاتف"
+    },
+    {
+     "key": "contact.008",
+     "kind": "Text",
+     "en": "Email",
+     "ar": "البريد"
+    },
+    {
+     "key": "contact.009",
+     "kind": "Text",
+     "en": "Hours",
+     "ar": "ساعات العمل"
+    },
+    {
+     "key": "contact.010",
+     "kind": "Bold text",
+     "en": "Saturday to Thursday, 8:00 to 17:00",
+     "ar": "السبت إلى الخميس، 8:00 إلى 17:00"
+    },
+    {
+     "key": "contact.011",
+     "kind": "Text",
+     "en": "Address",
+     "ar": "العنوان"
+    },
+    {
+     "key": "contact.012",
+     "kind": "Bold text",
+     "en": "P.O. Box 17136, Building 791, Road 425, Block 404, Sanabis, Kingdom of Bahrain",
+     "ar": "ص.ب 17136، مبنى 791، طريق 425، مجمع 404، السنابس، مملكة البحرين"
+    },
+    {
+     "key": "contact.013",
+     "kind": "Button",
+     "en": "Message us on WhatsApp",
+     "ar": "راسلنا على واتساب"
+    },
+    {
+     "key": "contact.014",
+     "kind": "Button",
+     "en": "Request a quote",
+     "ar": "اطلب عرض سعر"
+    },
+    {
+     "key": "contact.015",
+     "kind": "Link",
+     "en": "Open in Google Maps",
+     "ar": "افتح في خرائط Google"
+    },
+    {
+     "key": "contact.016",
+     "kind": "Tag",
+     "en": "Insulation",
+     "ar": "العزل"
+    },
+    {
+     "key": "contact.017",
+     "kind": "Text",
+     "en": "CR 139385-1",
+     "ar": "س.ت <bdi dir=\"ltr\">139385-1</bdi>"
+    },
+    {
+     "key": "contact.018",
+     "kind": "Tag",
+     "en": "Scaffolding",
+     "ar": "السقالات"
+    },
+    {
+     "key": "contact.019",
+     "kind": "Text",
+     "en": "CR 139385-2",
+     "ar": "س.ت <bdi dir=\"ltr\">139385-2</bdi>"
+    }
+   ]
+  }
+ ]
+}

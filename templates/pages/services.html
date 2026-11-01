@@ -1,0 +1,77 @@
+{% extends "base.html" %}{% load static %}
+{% block main %}<section class="pagehead"><div class="wrap"><div class="crumb"><a href="/">{% t "services.001" %}</a> / {% t "services.002" %}</div><h1>{% t "services.003" %}</h1><p class="lead">{% t "services.004" %}</p></div></section>
+<section class="band" id="insulation"><div class="wrap">
+  <div class="sec-head"><h2 class="h2">{% t "services.005" %}</h2><p class="lead">{% t "services.006" %}</p></div>
+  <div class="explorer">
+    <div class="hero-card" style="margin:0"><div id="ex-svg"></div><div class="legend" id="ex-legend"></div><p class="note" id="ex-note"></p></div>
+    <div class="stack"><ol class="layer-list" id="layer-list"></ol><div class="detail" id="layer-detail"></div></div>
+  </div>
+  <div class="gap-l"></div>
+  <div class="sec-head"><h3 class="h2">{% t "services.007" %}</h3></div>
+  <ol class="steps">
+    <li><b>{% t "services.008" %}</b><span>{% t "services.009" %}</span></li><li><b>{% t "services.010" %}</b><span>{% t "services.011" %}</span></li><li><b>{% t "services.012" %}</b><span>{% t "services.013" %}</span></li><li><b>{% t "services.014" %}</b><span>{% t "services.015" %}</span></li><li><b>{% t "services.016" %}</b><span>{% t "services.017" %}</span></li>
+  </ol>
+  <div class="gap-l"></div>
+  <div class="sec-head"><h3 class="h2">{% t "services.018" %}</h3><p class="lead">{% t "services.019" %}</p></div>
+  <div class="calc">
+    <div class="panel">
+      <div class="field"><label for="wall">{% t "services.020" %}</label><select id="wall"><option value="0.22" data-en="Hollow concrete block" data-ar="بلوك خرساني مفرغ">Hollow concrete block</option><option value="0.12" data-en="Solid concrete" data-ar="خرسانة مصمتة">Solid concrete</option><option value="0.25" data-en="Clay brick" data-ar="طابوق طيني">Clay brick</option></select></div>
+      <div class="field"><label for="thk">{% t "services.021" %}: <b class="mono" id="thkv" dir="ltr" style="unicode-bidi:isolate">55 mm</b></label><input id="thk" type="range" min="25" max="120" step="5" value="55"></div>
+      <p class="note">{% t "services.022" %}</p>
+    </div>
+    <div class="panel"><div class="bars" id="bars"></div><div id="verdict"></div></div>
+  </div>
+</div></section>
+
+<section class="band alt" id="scaffolding"><div class="wrap">
+  <div class="sec-head"><h2 class="h2">{% t "services.023" %}</h2><p class="lead">{% t "services.024" %}</p></div>
+  <div class="cols-3">
+    <div class="card rustb"><h3>{% t "services.025" %}</h3><p>{% t "services.026" %}</p></div><div class="card rustb"><h3>{% t "services.027" %}</h3><p>{% t "services.028" %}</p></div><div class="card rustb"><h3>{% t "services.029" %}</h3><p>{% t "services.030" %}</p></div>
+    <div class="card rustb"><h3>{% t "services.031" %}</h3><p>{% t "services.032" %}</p></div><div class="card rustb"><h3>{% t "services.033" %}</h3><p>{% t "services.034" %}</p></div><div class="card rustb"><h3>{% t "services.035" %}</h3><p>{% t "services.036" %}</p></div>
+  </div>
+  <div class="gap-l"></div>
+  <div class="cols-2" style="align-items:center">
+    <div class="stack"><h3 class="h2">{% t "services.037" %}</h3>
+      <ul class="names stock"><li>{% t "services.038" %}</li><li>{% t "services.039" %}</li><li>{% t "services.040" %}</li><li>{% t "services.041" %}</li><li>{% t "services.042" %}</li><li>{% t "services.043" %}</li></ul>
+      <div class="row" style="margin-top:8px"><a class="btn rust" href="/inquiries/#scaffolding">{% t "services.044" %}</a></div></div>
+    <div class="gallery" style="grid-template-columns:repeat(2,minmax(0,1fr))"><figure><img src="{% static 'img/s-tower.webp' %}" alt="Scaffold tower and working platform" loading="lazy" style="aspect-ratio:1"></figure><figure><img src="{% static 'img/s-sunset.webp' %}" alt="Scaffolding on a villa at sunset" loading="lazy" style="aspect-ratio:1"></figure></div>
+  </div>
+  <div class="gap-l"></div>
+  <div class="sec-head"><h3 class="h2">{% t "services.045" %}</h3></div>
+  <ol class="steps rust">
+    <li><b>{% t "services.046" %}</b><span>{% t "services.047" %}</span></li><li><b>{% t "services.048" %}</b><span>{% t "services.049" %}</span></li><li><b>{% t "services.050" %}</b><span>{% t "services.051" %}</span></li><li><b>{% t "services.052" %}</b><span>{% t "services.053" %}</span></li><li><b>{% t "services.054" %}</b><span>{% t "services.055" %}</span></li>
+  </ol>
+</div></section>
+<section class="closing"><div class="wrap closing-in"><div><h2>{% t "services.056" %}</h2><p>{% t "services.057" %}</p></div><div class="row"><a class="btn white" href="/inquiries/">{% t "services.058" %}</a><a class="btn light" href="/contact/">{% t "services.059" %}</a></div></div></section>{% endblock %}
+{% block scripts %}<script>
+
+
+AFL_INIT=window.AFL_INIT||[];AFL_INIT.push(function(){
+ var host=document.getElementById('ex-svg'),sv=layerSVG(host,true),cur='eps';
+ var list=document.getElementById('layer-list'),det=document.getElementById('layer-detail');
+ function paint(){
+  document.getElementById('ex-legend').innerHTML=legendHTML();
+  document.getElementById('ex-note').textContent=AFL.t({en:'Thin layers drawn at 4 px per mm. The 200 mm wall is cut short. Build-up on the wall is about 67 mm.',ar:'الطبقات الرقيقة مرسومة بمقياس 4 بكسل لكل مم، والجدار 200 مم مقطوع للاختصار. سماكة التركيب على الجدار نحو 67 مم.'});
+  list.innerHTML=LAYERS.map(function(L){var f=L.id==='sub'?'var(--l-sub)':(L.id==='eps'?'var(--l-eps)':'var('+L.c+')');
+   return '<li><button type="button" data-id="'+L.id+'" aria-pressed="'+(L.id===cur)+'"><i style="background:'+f+'"></i><span>'+L.n+'. '+AFL.t({en:L.en,ar:L.ar})+'</span><em><bdi dir="ltr">'+(L.mm?L.mm+' mm':'')+'</bdi></em></button></li>'}).join('');
+  var L=LAYERS.filter(function(x){return x.id===cur})[0];
+  det.innerHTML='<h3 class="h3">'+L.n+'. '+AFL.t({en:L.en,ar:L.ar})+'</h3><p>'+AFL.t({en:L.de,ar:L.da})+'</p>'+(L.mat?'<p class="mat">'+L.mat+'</p>':'<p class="note">'+AFL.t({en:'Supplier not named on the EWA material list.',ar:'المورّد غير مذكور في قائمة مواد الهيئة.'})+'</p>');
+  sv.highlight(cur)}
+ list.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;cur=b.getAttribute('data-id');paint()});
+ AFL.subs.push(paint);paint();
+
+ var wall=document.getElementById('wall'),thk=document.getElementById('thk');
+ function calc(){
+  var t=+thk.value,rw=+wall.value,base=0.13+0.04+rw+0.03,ru=base+(t/1000)/0.0382,u0=1/base,u1=1/ru,ok=u1<=0.57;
+  document.getElementById('thkv').textContent=t+' mm';
+  var max=Math.max(u0,1);
+  function bar(label,u,cls){return '<div class="bar"><span>'+label+'</span><div class="track"><div class="fill '+(cls||'')+'" style="width:'+Math.min(100,u/max*100)+'%"></div><div class="limit" style="inset-inline-start:'+(0.57/max*100)+'%"></div></div><b>'+u.toFixed(2)+'</b></div>'}
+  document.getElementById('bars').innerHTML=bar(AFL.t({en:'Bare wall',ar:'الجدار بدون عزل'}),u0)+bar(AFL.t({en:'With EIFS',ar:'مع نظام العزل'}),u1,ok?'ok':'bad')+'<p class="note">'+AFL.t({en:'U-value in W/m²K. The black marker is the 0.57 limit.',ar:'معامل الانتقال بوحدة واط/م²·كلفن. العلامة السوداء هي الحد 0.57.'})+'</p>';
+  var msg=ok?{en:'Within the 0.57 limit',ar:'ضمن حد 0.57'}:{en:'Above the limit. Use a thicker board.',ar:'أعلى من الحد. استخدم لوحًا أسمك.'};
+  var low=t<55?'<p class="note">'+AFL.t({en:'The registered systems start at 55 mm.',ar:'الأنظمة المسجّلة تبدأ من 55 مم.'})+'</p>':'';
+  document.getElementById('verdict').innerHTML='<span class="pill '+(ok?'ok':'bad')+'">'+AFL.t(msg)+'</span>'+low}
+ wall.addEventListener('change',calc);thk.addEventListener('input',calc);AFL.subs.push(calc);calc()});
+
+
+
+</script>{% endblock %}

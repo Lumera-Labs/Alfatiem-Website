@@ -1,0 +1,51 @@
+{% extends "base.html" %}{% load static %}
+{% block main %}
+<section class="hero"><img class="hero-im" src="{% static 'img/wadi-2.webp' %}" alt="Scaffolding and insulation crews at Wadi Al Sail, Hamad Town" width="1200" height="900" fetchpriority="high"><div class="wrap"><div class="hero-tx"><h1>{% t "index.001" %}</h1><p>{% t "index.002" %}</p><div class="row"><a class="btn white" href="/inquiries/">{% t "index.003" %}</a><a class="btn light" href="/projects/">{% t "index.004" %}</a></div></div></div></section>
+
+<section class="band"><div class="wrap">
+  <div class="divisions">
+    <div class="division"><img src="{% static 'img/sitra-1.webp' %}" alt="Insulated and finished homes, East Sitra Housing Project" loading="lazy">
+      <h3>{% t "index.005" %}</h3><p>{% t "index.006" %}</p><ul><li>{% t "index.007" %}</li><li>{% t "index.008" %}</li><li>{% t "index.009" %}</li></ul><a class="textlink more" href="/services/#insulation">{% t "index.010" %}</a></div>
+    <div class="division scaf"><img src="{% static 'img/s-hero.webp' %}" alt="Scaffolding on a multi-storey building" loading="lazy" style="object-position:50% 30%">
+      <h3>{% t "index.011" %}</h3><p>{% t "index.012" %}</p><ul><li>{% t "index.013" %}</li><li>{% t "index.014" %}</li><li>{% t "index.015" %}</li></ul><a class="textlink more" href="/services/#scaffolding">{% t "index.016" %}</a></div>
+  </div>
+</div></section>
+
+<section class="band alt"><div class="wrap split"><div class="stack"><h2 class="h2">{% t "index.017" %}</h2><p class="lead">{% t "index.018" %}</p><ul class="both"><li>{% t "index.019" %}<em>{% t "index.020" %}</em></li><li>{% t "index.021" %}<em>{% t "index.022" %}</em></li><li>{% t "index.023" %}<em>{% t "index.024" %}</em></li><li>{% t "index.025" %}<em>{% t "index.026" %}</em></li></ul><div><a class="textlink" href="/projects/">{% t "index.027" %}</a></div></div><img src="{% static 'img/s-eshp.webp' %}" alt="Scaffolding on insulated homes at ESHP Phase 3, East Sitra" loading="lazy"></div></section>
+
+<section class="band"><div class="wrap">
+  <div class="sec-head line"><h2 class="h2">{% t "index.028" %}</h2><p class="lead" id="stats"></p><a class="textlink" href="/projects/">{% t "index.029" %}</a></div>
+  <div class="plist" id="featured"></div>
+</div></section>
+
+<section class="band dark"><div class="wrap cols-2" style="align-items:center">
+  <div class="stack"><h2 class="h2">{% t "index.030" %}</h2><p>{% t "index.031" %}</p><div><a class="btn white" href="/approvals/">{% t "index.032" %}</a></div></div>
+  <div class="certpair">
+    <img src="{% static 'img/ewa-1.webp' %}" data-zoom="{% static 'img/ewa-1.webp' %}" alt="EWA registration certificate TIP25046" class="certimg" loading="lazy">
+    <img src="{% static 'img/ewa-3.webp' %}" data-zoom="{% static 'img/ewa-3.webp' %}" alt="EWA registration certificate TIP25039" class="certimg low" loading="lazy">
+  </div>
+</div></section>
+
+<section class="band alt"><div class="wrap">
+  <div class="sec-head"><h2 class="h2">{% t "index.033" %}</h2></div>
+  <ul class="names">
+    <li>{% t "index.034" %}</li><li>Aradous Contracting and Maintenance</li><li>Al-Nasir Contracting</li><li>Ahmed Omer Trading &amp; Contracting</li>
+    <li>Modern Insulation Technology Co. (MITCO)</li><li>Ali Reza &amp; Sons</li><li>Al-Shaheen Construction</li><li>M.A.Y Al Mezeal</li><li>Diyar Al Muharraq</li>
+  </ul>
+</div></section>
+<section class="closing"><div class="wrap closing-in"><div><h2>{% t "index.035" %}</h2><p>{% t "index.036" %}</p></div><div class="row"><a class="btn white" href="/inquiries/">{% t "index.037" %}</a><a class="btn light" href="/contact/">{% t "index.038" %}</a></div></div></section>{% endblock %}
+{% block data %}{{ projects_json|json_script:"projects-data" }}{% endblock %}
+{% block scripts %}<script>
+
+
+AFL_INIT=window.AFL_INIT||[];AFL_INIT.push(function(){
+ function render(){
+  var n=PROJECTS.length,ar=Math.round(totalArea(PROJECTS)/1000),mo=PROJECTS.filter(function(p){return p.s==='gov'}).length;
+  document.getElementById('stats').innerHTML=AFL.lang==='ar'?'<bdi dir="ltr">'+n+'</bdi> مشروعًا منذ 2021، وأكثر من <bdi dir="ltr">'+ar+',000</bdi> م² من الجدران المعزولة، منها <bdi dir="ltr">'+mo+'</bdi> مشاريع لوزارة الإسكان.':n+' projects since 2021 and more than '+ar+',000 m² of wall insulated, '+mo+' of them for the Ministry of Housing.';
+  var f=PROJECTS.filter(function(p){return p.feat}).slice(0,4);
+  document.getElementById('featured').innerHTML=f.map(projCard).join('')}
+ AFL.subs.push(render);render()});
+
+
+
+</script>{% endblock %}

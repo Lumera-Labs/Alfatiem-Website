@@ -1,0 +1,14 @@
+{% extends "admin/base.html" %}{% load static %}
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | Al-Fatiem admin{% endblock %}
+{% block extrahead %}{{ block.super }}<link rel="icon" href="{% static 'img/favicon.png' %}">{% endblock %}
+{% block extrastyle %}{{ block.super }}<style>
+:root{--primary:#17689E;--secondary:#105282;--header-bg:#161D23;--header-link-color:#fff;--breadcrumbs-bg:#105282;--link-fg:#17689E;--link-selected-fg:#105282;--button-bg:#17689E;--button-hover-bg:#105282;--default-button-bg:#105282;--default-button-hover-bg:#0B3E63;--accent:#4AB0E2}
+@media (prefers-color-scheme:dark){:root{--primary:#17639A;--secondary:#12517F;--link-fg:#72C2EE;--link-selected-fg:#9AD4F4;--header-bg:#0B1014;--breadcrumbs-bg:#12517F}}
+#header{border-bottom:6px solid transparent;border-image:linear-gradient(90deg,#A3AEB6 0 30%,#CDBB9F 30% 34%,#DCE2E6 34% 80%,#B9C5CD 80% 89%,#E9DDC8 89% 93%,#4AB0E2 93%) 1}
+#branding h1 a{display:flex;align-items:center;gap:10px}
+#branding img{height:26px;width:auto}
+.inline-group .tabular td textarea{min-width:260px}
+.inline-group.blocks td.original p{display:none}
+[dir=rtl],textarea[dir=rtl],input[dir=rtl]{font-family:Tahoma,"Segoe UI",sans-serif}
+</style>{% endblock %}
+{% block branding %}<div id="site-name"><a href="{% url 'admin:index' %}"><img src="{% static 'img/favicon.png' %}" alt="" style="height:28px;vertical-align:middle;margin-inline-end:8px">Al-Fatiem Alarabi website</a></div>{% if user.is_anonymous %}{% include "admin/color_theme_toggle.html" %}{% endif %}{% endblock %}

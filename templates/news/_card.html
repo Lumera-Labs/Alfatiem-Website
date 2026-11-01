@@ -1,0 +1,7 @@
+<a class="ncard" href="{{ p.get_absolute_url }}" target="_blank" rel="noopener">
+  <span class="ncard-im"><img src="{{ p.cover.url }}" alt="" loading="lazy"></span>
+  <span class="nmeta"><span class="tag gov">{% bi p.category.name_en p.category.name_ar %}</span><time datetime="{{ p.date|date:'Y-m-d' }}">{% postdate p %}</time></span>
+  <span class="ncard-t">{% bi p.title_en p.title_ar %}</span>
+  <span class="ncard-s">{% bi p.summary_en p.summary_ar %}</span>
+  <span class="sr-only">{% t "news.010" %}</span>
+</a>
